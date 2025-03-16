@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<title>Anoop-Portflio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+	
+	<link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	
+	
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container pt-2">
+			<a class="navbar-brand text-info" href="index.html">Anoop Kumar P S</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item "><a href="#home-section" class="nav-link"><span class="text-info">Home</span></a></li>
+					<li class="nav-item "><a href="#about-section" class="nav-link"><span class="text-info">About</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span class="text-info">Skills</span></a></li>
+					<li class="nav-item"><a href="#services-section" class="nav-link"><span class="text-info">Services</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span class="text-info">Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span class="text-info">Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container-fluid px-md-0">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+						{% comment %} <div class="one-third order-md-last img" style="background-image:url(images/django-faster.webp);"> {% endcomment %}
+							<div class="one-third order-md-last img" style="background-image: url('{% static "images/py5.webp" %}');">
+
+							<div class="overlay"></div>
+							<div class="overlay-1"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello! This is Anoop</span>
+								<h1 class="mb-4 mt-3">Creative <span>Python</span> Django <span> Developer</span></h1>
+								<p><a href="https://github.com/Anoop-maker" class="btn btn-primary">My work</a> <a href="{% static 'documents/ANOOP KUMAR P S.pdf' %}" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container-fluid px-md-0 pb-5">
+					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+						{% comment %} <div class="one-third order-md-last img" style="background-image:url(images/bg_2.jpg);"> {% endcomment %}
+							<div class="one-third order-md-last img"  style="background-image: url('{% static "images/py4.jpg" %}');">
+								<div class="overlay"></div>
+							<div class="overlay-1"></div>
+						</div>
+						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">I Design &amp; Build WebApps</span>
+								<h1 class="mb-4 mt-3">Hi, I am <span>Anoop, This is</span>  my favorite <span>work.</span></h1>
+								<p><a href="#contact-section" class="btn btn-primary">Hire me</a> <a href="{% static 'documents/ANOOP KUMAR P S.pdf' %}" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% comment %} <section class="ftco-counter img bg-light" id="section-counter">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-suitcase"></span>
+						</div>
+						<div class="text">
+							<strong class="number" data-number="750">0</strong>
+							<span>Project Complete</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-loyalty"></span>
+						</div>
+						<div class="text">
+							<strong class="number" data-number="568">0</strong>
+							<span>Happy Clients</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-coffee"></span>
+						</div>
+						<div class="text">
+							<strong class="number" data-number="478">0</strong>
+							<span>Cups of coffee</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-calendar"></span>
+						</div>
+						<div class="text">
+							<strong class="number" data-number="780">0</strong>
+							<span>Years experienced</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> {% endcomment %}
+
+	<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+		<div class="container pt-5 mt-5">
+			<div class="row d-flex no-gutters">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						{% comment %} <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about-1.jpg);"> {% endcomment %}
+							<div class="img d-flex align-self-stretch align-items-center" style="background-image:url('{% static "images/about.jpg" %}');">
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
+					<div class="py-md-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								<span class="subheading">My Intro</span>
+								<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
+								<p>"I am an aspiring Python Django developer with a strong interest in web development and software engineering.
+									 I have experience working with Django, PostgreSQL, and REST APIs, and I am constantly learning new technologies to enhance my skills.
+									  My projects range from simple CRUD applications to more complex web platforms with authentication, user management, and API integrations. 
+									  I am eager to collaborate and build meaningful digital experiences."</p>
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Name:</span> <span>Anoop Kumar P S </span></li>
+									<li class="d-flex"><span>Date of birth:</span> <span>June 08, 1995</span></li>
+									<li class="d-flex"><span>Address:</span> <span>Ernakulam</span></li>
+									<li class="d-flex"><span>Zip code:</span> <span>682024</span></li>
+									<li class="d-flex"><span>Email:</span> <span>anoopps885@gmail.com</span></li>
+									<li class="d-flex"><span>Phone: </span> <span>+91-751-095-0363</span></li>
+								</ul>
+							</div>
+							<div class="col-md-12">
+								<div class="my-interest d-lg-flex w-100">
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="flaticon-listening"></span>
+										</div>
+										<div class="text">Music</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="flaticon-suitcases"></span>
+										</div>
+										<div class="text">Travel</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="flaticon-video-player"></span>
+										</div>
+										<div class="text">Movie</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="flaticon-football"></span>
+										</div>
+										<div class="text">Sports</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="ftco-section bg-light" id="skills-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Skills</span>
+					<h2 class="mb-4">My Skills</h2>
+					{% comment %} <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> {% endcomment %}
+				</div>
+			</div>
+			<div class="row progress-circle mb-5">
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4"><i class="fab fa-python"></i> Python</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='95'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<!-- END -->
+
+						<!-- Demo info -->
+						<div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								{% comment %} <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span> {% endcomment %}
+							</div>
+							<div class="col-6">
+								{% comment %} <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span> {% endcomment %}
+							</div>
+						</div>
+						<!-- END -->
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4"><i class="devicon-django-plain"></i> Django</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='85'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">85<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<!-- END -->
+
+						<!-- Demo info -->
+						<div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								{% comment %} <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span> {% endcomment %}
+							</div>
+							<div class="col-6">
+								{% comment %} <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span> {% endcomment %}
+							</div>
+						</div>
+						<!-- END -->
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4"><i class="fab fa-html5"></i> HTML</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='70'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<!-- END -->
+
+						<!-- Demo info -->
+						<div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								{% comment %} <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span> {% endcomment %}
+							</div>
+							<div class="col-6">
+								{% comment %} <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span> {% endcomment %}
+							</div>
+						</div>
+						<!-- END -->
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4"><i class="fab fa-css3-alt"></i> CSS</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='70'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<!-- END -->
+
+						<!-- Demo info -->
+						<div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								{% comment %} <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span> {% endcomment %}
+							</div>
+							<div class="col-6">
+								{% comment %} <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span> {% endcomment %}
+							</div>
+						</div>
+						<!-- END -->
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4"><i class="fab fa-bootstrap"></i> Bootstrap</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='75'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<!-- END -->
+
+						<!-- Demo info -->
+						<div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								{% comment %} <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span> {% endcomment %}
+							</div>
+							<div class="col-6">
+								{% comment %} <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span> {% endcomment %}
+							</div>
+						</div>
+						<!-- END -->
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4"><i class="fas fa-database"></i> SQL</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='75'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<!-- END -->
+
+						<!-- Demo info -->
+						<div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								{% comment %} <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span> {% endcomment %}
+							</div>
+							<div class="col-6">
+								{% comment %} <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span> {% endcomment %}
+							</div>
+						</div>
+						<!-- END -->
+					</div>
+				</div>
+
+						<div class="col-lg-4 mb-4">
+							<div class="bg-white rounded-lg shadow p-4">
+								<h2 class="h5 font-weight-bold text-center mb-4"><i class="fas fa-database"></i> MySQL</h2>
+		
+								<!-- Progress bar 1 -->
+								<div class="progress mx-auto" data-value='70'>
+									<span class="progress-left">
+										<span class="progress-bar border-primary"></span>
+									</span>
+									<span class="progress-right">
+										<span class="progress-bar border-primary"></span>
+									</span>
+									<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+										<div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
+									</div>
+								</div>
+								<!-- END -->
+		
+								<!-- Demo info -->
+								<div class="row text-center mt-4">
+									<div class="col-6 border-right">
+										{% comment %} <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span> {% endcomment %}
+									</div>
+									<div class="col-6">
+										{% comment %} <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span> {% endcomment %}
+									</div>
+								</div>
+								<!-- END -->
+							</div>
+						</div>
+
+						<div class="col-lg-4 mb-4">
+							<div class="bg-white rounded-lg shadow p-4">
+								<h2 class="h5 font-weight-bold text-center mb-4"><i class="fas fa-database"></i> PostgreSQL</h2>
+		
+								<!-- Progress bar 1 -->
+								<div class="progress mx-auto" data-value='70'>
+									<span class="progress-left">
+										<span class="progress-bar border-primary"></span>
+									</span>
+									<span class="progress-right">
+										<span class="progress-bar border-primary"></span>
+									</span>
+									<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+										<div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
+									</div>
+								</div>
+								<!-- END -->
+		
+								<!-- Demo info -->
+								<div class="row text-center mt-4">
+									<div class="col-6 border-right">
+										{% comment %} <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span> {% endcomment %}
+									</div>
+									<div class="col-6">
+										{% comment %} <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span> {% endcomment %}
+									</div>
+								</div>
+								<!-- END -->
+							</div>
+						</div>
+						
+
+						<div class="col-lg-4 mb-4">
+							<div class="bg-white rounded-lg shadow p-4">
+								<h2 class="h5 font-weight-bold text-center mb-4"><i class="fa-brands fa-react"></i> ReactJS</h2>
+		
+								<!-- Progress bar 1 -->
+								<div class="progress mx-auto" data-value='70'>
+									<span class="progress-left">
+										<span class="progress-bar border-primary"></span>
+									</span>
+									<span class="progress-right">
+										<span class="progress-bar border-primary"></span>
+									</span>
+									<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+										<div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
+									</div>
+								</div>
+								<!-- END -->
+		
+								<!-- Demo info -->
+								<div class="row text-center mt-4">
+									<div class="col-6 border-right">
+										{% comment %} <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span> {% endcomment %}
+									</div>
+									<div class="col-6">
+										{% comment %} <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span> {% endcomment %}
+									</div>
+								</div>
+								<!-- END -->
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section" id="experience-section">
+		<div class="container">
+				<div class="col-md-12 heading-section text-center ftco-animate mb-5">
+					<span class="subheading">Experence</span>
+					<h2 class="mb-4">Experence</h2>
+					<p></p>
+				</div>
+			</div>
+	
+			<div class="container border shadow d-flex justify-content-center  mt-5 mb-5 "id="experience">
+				
+				  <div class="card mb-4 shadow mt-3 mx-auto" style="max-width: 1000px;">
+					<div class="p-3">
+				<h3 class="experience-date">2025 - Present</h3>
+				<h4 class="experience-role">Python-Django-Full Stack Developer</h4>
+				<p class="experience-company">Luminar Technohub</p>
+				<ul>
+					<li>Designed and developed dynamic web applications using Python and Django, optimizing backend performance and ensuring scalable architecture.</li>
+					<li>Implemented RESTful APIs and integrated third-party services, enhancing system interoperability and improving data handling efficiency by 40%.</li>
+					<li>Led a full-stack project, leveraging Django, JavaScript, and Bootstrap to create responsive and user-friendly interfaces, improving user engagement by 35%.</li>
+					<li>Optimized database queries using PostgreSQL and Django ORM, reducing query execution time by 50%.</li>
+			</ul>
+			</div></div>
+			</div>
+	
+			<div class="container border shadow d-flex justify-content-center  mt-5 mb-5 "id="experience">
+				
+				<div class="card mb-4 shadow mt-3 mx-auto" style="max-width: 1000px;">
+				  <div class="p-3">				
+				<h3 class="experience-date">2024 - 2024</h3>
+				<h4 class="experience-role">Python Django Full Stack Developer Intern</h4>
+				<p class="experience-company">Luminar Technolab</p>
+				<ul>
+					<li>Developed and deployed full-stack web applications using Python and Django, ensuring optimized backend logic and scalable architecture.</li>
+					<li>Built dynamic and responsive UI components with HTML, CSS, Bootstrap, and JavaScript, improving user experience and accessibility.</li>
+					<li>Designed and integrated RESTful APIs for seamless communication between frontend and backend systems, enhancing data efficiency.</li>
+					<li>Managed databases using MySQL and SQL, optimizing queries to improve data retrieval performance by 40%.</li>
+					<li>Implemented secure payment gateways using Razorpay, enabling seamless transaction processing.
+						Utilized Git for version control and collaborated on projects efficiently using GitHub.
+						Deployed applications on PythonAnywhere, ensuring smooth hosting and deployment.
+						Gained hands-on experience in software development best practices, debugging, and performance optimization.</li>
+
+				</ul>
+			</div>
+		</div>
+		</div>
+	</section>
+	
+
+	<section class="ftco-section" id="services-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-12 heading-section text-center ftco-animate mb-5">
+					<span class="subheading">Services</span>
+					<h2 class="mb-4">Services</h2>
+					<p></p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-3d-design"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Web Design</h3>
+							<p> Crafting visually stunning and user-friendly website to enhance digital experiences.</p>
+						</div>
+					</div> 
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-app-development"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Web Application</h3>
+							<p>Developing interactive and scalable web applications tailored to business needs.                                </p>
+						</div>
+					</div> 
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-web-programming"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Web Development</h3>
+							<p>Building robust, secure, and high-performance websites using modern technologies.                            </p>
+						</div>
+					</div> 
+				</div>
+				{% comment %} <div class="col-md-6 col-lg-3">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-branding"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Banner Design</h3>
+							<p>A small river named Duden flows by their place and supplies.</p>
+						</div>
+					</div> 
+				</div>
+			</div> {% endcomment %}
+
+			{% comment %} <div class="row">
+				<div class="col-md-6 col-lg-3">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-computer"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Branding</h3>
+							<p>A small river named Duden flows by their place and supplies.</p>
+						</div>
+					</div> 
+				</div> {% endcomment %}
+				{% comment %} <div class="col-md-6 col-lg-3">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-vector"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Icon Design</h3>
+							<p>A small river named Duden flows by their place and supplies.</p>
+						</div>
+					</div> 
+				</div> {% endcomment %}
+				{% comment %} <div class="col-md-6 col-lg-3">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-vector"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Graphic Design</h3>
+							<p>A small river named Duden flows by their place and supplies.</p>
+						</div>
+					</div> 
+				</div> {% endcomment %}
+				{% comment %} <div class="col-md-6 col-lg-3">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-zoom"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">SEO</h3>
+							<p>A small river named Duden flows by their place and supplies.</p>
+						</div>
+					</div> 
+				</div>
+			</div> {% endcomment %}
+		</div>
+	</section>
+
+	<section class="ftco-hireme">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-md-8 col-lg-8 d-flex align-items-center">
+					<div class="w-100 py-4">
+						<h2>Have a project on your mind.</h2>
+						<p>As a Python Django Full Stack Developer, I specialize in crafting dynamic and scalable web applications tailored to 
+							your needs. Whether it's a sleek website, a robust backend system, or seamless API integrations, 
+							I bring expertise in Python, Django, REST API, and front-end technologies like HTML, CSS, Bootstrap,
+							 and JavaScript. Let's collaborate to turn your vision into reality with clean, 
+							 efficient, and user-friendly solutions.</p>
+						<p class="mb-0"><a href="mailto:anoopps885@gmail.com" class="btn btn-white py-3 px-4">Contact me</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4 d-flex align-items-end">
+					<img src="images/author.png" class="img-fluid" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-project" id="projects-section">
+		<div class="container-fluid px-md-4">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Accomplishments</span>
+					<h2 class="mb-4">My Projects</h2>
+					<p>"As a passionate and motivated web developer, I have worked on several projects that highlight my skills in 
+						Django, Python, and front-end technologies. Through hands-on experience, I have built user authentication systems, 
+						travel booking platforms, and interactive web applications. Each project has helped me strengthen my problem-solving 
+						abilities, write clean and efficient code, and improve user experience. I am always eager to learn new technologies and 
+						apply them to real-world solutions, ensuring that my projects are both functional and user-friendly."</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					{% comment %} <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.jpg);"> {% endcomment %}
+						<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" 
+						style="background-image:url('{% static "images/ss1.png" %}');">
+							<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">GYM &amp; Trainer</a></h3>
+							<span>Web Design</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					{% comment %} <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-2.jpg);"> {% endcomment %}
+						<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" 
+						style="background-image:url('{% static "images/ss2.png" %}');">
+							<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Ecommerce &amp; Payment</a></h3>
+							<span>Web Design</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					{% comment %} <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);"> {% endcomment %}
+						<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" 
+						style="background-image: url('{% static "images/ss3.png" %}');">
+							<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Travel &amp; Tourism </a></h3>
+							<span>Web Design</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					{% comment %} <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-4.jpg);"> {% endcomment %}
+								<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" 
+										style="background-image: url('{% static "images/ss4.png" %}');">
+ 							<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Social &amp; Authentication </a></h3>
+							<span>Web Design</span>
+						</div>
+					</div>
+				</div>
+				{% comment %} <div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-5.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+							<span>Web Design</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-6.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+							<span>Web Design</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-7.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+							<span>Web Design</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-8.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+							<span>Web Design</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> {% endcomment %}
+	</section>
+
+
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<span class="subheading">Contact me</span>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>"I’m always excited to connect and collaborate on new opportunities! Whether you have a project idea, 
+						need a web developer, or just want to discuss technology, feel free to reach out. I am open to freelance work, 
+						internships, and full-time roles where I can apply my skills and grow as a developer. Let’s build something amazing 
+						together!"</p>
+				</div>
+			</div>
+
+			{% comment %} <div class="row block-9">
+				<div class="col-md-8">
+					<form action="#" class="bg-light p-4 p-md-5 contact-form">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Your Name">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Your Email">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Subject">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+								</div>
+							</div>
+							 <div class="col-md-12">
+								<div class="form-group">
+									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+								</div>
+							</div>  {% endcomment %}
+
+							
+						{% comment %} </div>
+					</form> {% endcomment %}
+					
+				{% comment %} </div> {% endcomment %}
+
+				{% comment %} <div class="col-md-4 d-flex pl-md-5">
+					<div class="row">
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-map-marker"></span>
+							</div>
+							<div class="text">
+								<p><span>Address:</span>Ernakulam</p>
+							</div>
+						</div>
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="text">
+								<p><span>Phone:</span> <a href="tel://1234567920">+91 751-095-0363</a></p>
+							</div>
+						</div>
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-paper-plane"></span>
+							</div>
+							<div class="text">
+								<p><span>Email:</span> <a href="mailto:info@yoursite.com">anoopps885@gmail.com</a></p>
+							</div>
+						</div>
+						
+					</div> {% endcomment %}
+					<!-- <div id="map" class="map"></div> -->
+					<div class="col-md-12 d-flex align-items-center justify-content-between mb-5 p-5">
+						<div class="dbox d-flex align-items-center">
+							<div class="icon d-flex align-items-center justify-content-center mr-2">
+								<span class="fa fa-map-marker"></span>
+							</div>
+							<div class="text">
+								<p><span>Address:</span> Ernakulam</p>
+							</div>
+						</div>
+					
+						<div class="dbox d-flex align-items-center">
+							<div class="icon d-flex align-items-center justify-content-center mr-2">
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="text">
+								<p><span>Phone:</span> <a href="tel://7510950363">+91 751-095-0363</a></p>
+							</div>
+						</div>
+					
+						<div class="dbox d-flex align-items-center">
+							<div class="icon d-flex align-items-center justify-content-center mr-2">
+								<span class="fa fa-paper-plane"></span>
+							</div>
+							<div class="text">
+								<p><span>Email:</span> <a href="mailto:anoopps885@gmail.com">anoopps885@gmail.com</a></p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row mb-4">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Lets talk about</h2>
+						<p>As a fresher Python Django developer with a strong foundation in web development, database management, and API integration. Always eager to learn, grow, and contribute to impactful projects.</p>
+					</div>
+				</div>
+				
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Services</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Design</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Development</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+91 751-095-0363</span></a></li>
+								<li><a href="#"><span class="fa fa-paper-plane email-icon pr-4"></span><span class="text">anoopps885@gmail.com</span></a></li>
+							</ul>
+						</div>
+						{% comment %} <ul class="ftco-footer-social list-unstyled mt-2">
+							<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+						</ul> {% endcomment %}
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright Anoop Kumar P S &copy;<script>document.write(new Date().getFullYear());</script><i class="" aria-hidden="true"></i> <a href="https://colorlib.com" target="_blank"></a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		
+
+		<!-- loader -->
+		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+		<script src="{% static 'js/popper.min.js' %}"></script>
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+		<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+		<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+		<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+		<script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+		<script src="{% static 'js/scrollax.min.js' %}"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+		<script src="{% static 'js/google-map.js' %}"></script>
+		
+		<script src="{% static 'js/main.js' %}"></script>
+		
+	</body>
+	</html>
