@@ -67,7 +67,7 @@ TEMPLATES = [
         },
     },
 ]
-
+STATIC_URL = '/static/'
 WSGI_APPLICATION = 'folio.wsgi.application'
 STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
 
